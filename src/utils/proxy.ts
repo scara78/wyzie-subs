@@ -101,7 +101,7 @@ export async function proxyFetch(url: string, options?: RequestInit): Promise<Re
     const proxyUrl = new URL(proxy);
     const userAgent = USER_AGENTS[Math.floor(Math.random() * USER_AGENTS.length)];
     const defaultHeaders = getHeaders(userAgent);
-    const sharedSecret = "N7CCNDxwbIjtqkDehYpyMvcKzEDc9e3NT";
+    onst sharedSecret = process.env.PROXY_SECRET;
     if (!sharedSecret || sharedSecret.trim() === "") {
       throw new Error("PROXY_SECRET is not set. Valve pls fix.");
     }
