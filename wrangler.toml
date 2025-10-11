@@ -3,7 +3,7 @@ name = "sub-scraping"
 main = "./.output/server/index.mjs"
 compatibility_date = "2025-02-14"
 toconfig = "./tsconfig.json"
-route = { pattern = "subtitrari.cscara.workers.dev", custom_domain = false }
+route = { pattern = "srtapi.vercel.app", custom_domain = false }
 
 minify = true
 
